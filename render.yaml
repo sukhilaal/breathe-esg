@@ -1,6 +1,6 @@
 ﻿services:
   - type: web
-    name: breathe-esg-api
+    name: sukhilaal-breathe-esg-api
     env: python
     plan: free
     buildCommand: |
@@ -8,7 +8,7 @@
       python manage.py migrate
       python manage.py seed_reference_data
       python manage.py collectstatic --noinput
-    startCommand: gunicorn backend.wsgi:application
+    startCommand: gunicorn backend.wsgi:application --bind 0.0.0.0:$PORT
     envVars:
       - key: DEBUG
         value: "false"
@@ -18,10 +18,10 @@
         value: "*"
 
   - type: static_site
-    name: breathe-esg-web
+    name: sukhilaal-breathe-esg-web
     rootDir: frontend
     buildCommand: npm ci && npm run build
     staticPublishPath: dist
     envVars:
       - key: VITE_API_BASE
-        value: https://breathe-esg-api.onrender.com/api
+        value: https://sukhilaal-breathe-esg-api.onrender.com/api

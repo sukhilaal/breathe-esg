@@ -68,3 +68,6 @@ python manage.py test
 ## Deployment notes
 A `render.yaml` is included to deploy API + static web on Render.
 After deployment, set frontend `VITE_API_BASE` to the API service URL + `/api`.
+
+## Deploy to Render
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sukhilaal/breathe-esg)
