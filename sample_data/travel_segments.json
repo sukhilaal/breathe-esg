@@ -1,0 +1,45 @@
+﻿[
+  {
+    "trip_id": "TRIP-2026-0001",
+    "segment_id": "SEG-1",
+    "category": "flight",
+    "start_date": "2026-01-11",
+    "end_date": "2026-01-11",
+    "origin_airport": "BLR",
+    "destination_airport": "DEL",
+    "amount": 18450.25,
+    "currency": "INR"
+  },
+  {
+    "trip_id": "TRIP-2026-0001",
+    "segment_id": "SEG-2",
+    "category": "hotel",
+    "start_date": "2026-01-11",
+    "end_date": "2026-01-14",
+    "nights": 3,
+    "amount": 28500,
+    "currency": "INR"
+  },
+  {
+    "trip_id": "TRIP-2026-0099",
+    "segment_id": "SEG-3",
+    "category": "ground",
+    "start_date": "2026-01-20",
+    "end_date": "2026-01-20",
+    "distance_miles": 18.5,
+    "amount": 1850,
+    "currency": "INR"
+  },
+  {
+    "trip_id": "TRIP-2026-0555",
+    "segment_id": "SEG-4",
+    "category": "flight",
+    "start_date": "2026-01-29",
+    "end_date": "2026-01-29",
+    "origin_airport": "SFO",
+    "destination_airport": "LHR",
+    "distance_km": 8616,
+    "amount": 132000,
+    "currency": "INR"
+  }
+]

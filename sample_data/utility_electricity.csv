@@ -1,0 +1,4 @@
+﻿meter_id,bill_start_date,bill_end_date,bill_total_volume,bill_total_unit,service_tariff,bill_total_cost,currency,site_code
+BLR-MTR-1001,2026-01-03,2026-02-04,58420,kWh,HT Industrial TOD,482135.20,INR,BLR-CAMPUS
+CHN-MTR-8830,2026-01-15,2026-02-16,40210,kWh,LT Commercial Non-TOD,318930.75,INR,CHN-PLANT
+MUM-MTR-7721,2026-01-01,2026-03-01,120500,kWh,HT Industrial TOD,980445.10,INR,MUM-WH

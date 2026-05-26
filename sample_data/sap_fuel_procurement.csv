@@ -1,0 +1,5 @@
+﻿Belegnummer,Item,Werk,Buchungsdatum,Materialnummer,Materialgruppe,Warentext,Menge,MEINS,Nettowert,Waehrung,FuelType
+5000123401,10,1000,15.01.2026,DIESEL-HSD-01,FUEL,Diesel for stationary generator,"12450,5",L,"103210,55",INR,Diesel
+5000123402,20,1100,17.01.2026,PMS-01,FUEL,Petrol for fleet,"720",gal,"85440.20",INR,Gasoline
+5100456701,10,2000,18/01/2026,STEEL-PLATE,RAW_MATERIAL,Low carbon steel sheet,"12.4",t,"620000",INR,
+5100456702,10,9999,19/01/2026,CHEM-SOLV-01,CHEMICALS,Process solvent,"450",kg,"77500",INR,
