@@ -1,6 +1,7 @@
 """Django settings for the Breathe ESG prototype."""
 
 import os
+import shutil
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -61,10 +62,19 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
+default_db_path = BASE_DIR / "db.sqlite3"
+if os.getenv("VERCEL"):
+    tmp_db_path = Path("/tmp/breathe_esg.sqlite3")
+    if not tmp_db_path.exists() and default_db_path.exists():
+        shutil.copy2(default_db_path, tmp_db_path)
+    database_path = tmp_db_path
+else:
+    database_path = default_db_path
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': database_path,
     }
 }
 
@@ -92,7 +102,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = os.getenv("TZ", "UTC")
+TIME_ZONE = os.getenv("TZ", "UTC").lstrip(":") or "UTC"
 
 USE_I18N = True
 
