@@ -2,6 +2,11 @@
 
 Django REST + React prototype for ingesting SAP, utility electricity, and corporate travel data, normalizing into a common activity ledger, and supporting analyst review + audit lock workflow.
 
+## Live deployment
+- Frontend app: `https://sukhilaal-breathe-esg-web.vercel.app`
+- Backend API: `https://sukhilaal-breathe-esg-api.vercel.app`
+- Health check: `https://sukhilaal-breathe-esg-api.vercel.app/api/health/`
+
 ## Stack
 - Backend: Django 6 + Django REST Framework
 - Frontend: React (Vite)
